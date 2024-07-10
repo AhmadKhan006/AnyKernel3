@@ -4,7 +4,7 @@
 ### AnyKernel setup
 # global properties
 properties() { '
-kernel.string=Void-R1
+kernel.string=Void-Release-1
 kernel.compiler=AOSP clang
 kernel.made=Knotzy07x
 message.word=
@@ -36,6 +36,21 @@ patch_vbmeta_flag=auto;
 
 # import functions/variables and setup patching - see for reference (DO NOT REMOVE)
 . tools/ak3-core.sh;
+
+# Show logo
+ui_print "⡷⢀⣠⣤⣤⡙⢷⢝⣢⣧⣭⣴⢫⣬⡆⣿⣿⡟⣼⣿⣿⢟⢵⣿⡿⣡"
+ui_print "⢰⣿⣿⣿⣿⣿⢸⠰⣬⣛⣛⣭⣴⣶⣶⣦⣭⣥⣬⣀⠌⣬⣦⢉⣼⡿"
+ui_print "⣌⡻⠿⠟⣛⢡⡾⢃⣰⣿⣿⡿⢫⣽⣿⣿⣿⣿⣿⣿⣷⣌⠃⣼⢏⣄"
+ui_print "⣿⣿⢸⣿⣿⢂⠴⣿⣿⣿⡿⢡⣿⣿⢃⢹⣿⣿⣿⣿⣿⣿⣷⡀⣾⣿"
+ui_print "⣿⣿⢸⡿⢡⢎⣾⣿⣿⡿⢀⣿⣿⡏⡜⡈⣿⣿⣿⢻⣿⡎⣿⣷⢹⣿"
+ui_print "⣿⣿⡄⠀⠎⣾⢣⣿⡿⡀⢸⢿⣿⠀⣰⣧⢹⣿⣿⡆⣿⣧⢹⣿⡇⢻"
+ui_print "⣿⣿⡇⢰⢸⢏⣾⢟⣤⣙⠸⢸⣿⢰⢡⡶⣠⢻⣿⣧⢻⣿⢸⣿⣿ "
+ui_print "⣿⣧⢰⠀⠞⢈⣥⠈⢻⣿⡆⠘⣿⣼⣿⣿⣿⣷⡹⢿⠈⡿⠈⣿⡏ "
+ui_print "⣿⢁⣿⢸⡞⣸⠿⠃⢀⣽⣿⣿⣮⣿⡟⠋⢉⣀⣽⣷⣶⠇⢰⣿⢧⠀"
+ui_print "⣿⣦⡙⡿⢡⣿⣶⣾⣿⣿⣿⣿⣿⣿⣿⣆⠈⠻⣿⣿⣿⠀⣾⡟⣸⡇"
+ui_print "⣿⣿⢇⣇⠸⣿⣿⣿⡏⠩⠭⠭⣒⣈⢻⣿⣿⣾⣿⣿⢇⡾⠋⢰⣿⣇"
+ui_print "⣿⣿⢸⢻⡄⠙⠻⣿⣧⠺⣿⣿⣿⡿⢸⣿⣿⣿⣯⣥⣭⣶⣿⠀⢻⣿"
+ui_print "--------- spes bomb ----------"
 
 # boot install
 dump_boot; # use split_boot to skip ramdisk unpack, e.g. for devices with init_boot ramdisk
