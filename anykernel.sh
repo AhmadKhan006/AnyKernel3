@@ -5,7 +5,7 @@
 # global properties
 properties() { '
 kernel.string=Void-Release-1
-kernel.compiler=AOSP clang
+kernel.compiler=AOSP clang 18
 kernel.made=Knotzy07x
 message.word=
 do.devicecheck=1
